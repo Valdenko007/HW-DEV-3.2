@@ -1,13 +1,8 @@
-ALTER TABLE developers
-ADD COLUMN salary INT;
+alter table developers
+add salary int not null default 0;
 
-UPDATE developers SET salary = 2400 WHERE id = 1;
-UPDATE developers SET salary = 2800 WHERE id = 2;
-UPDATE developers SET salary = 7500 WHERE id = 3;
-UPDATE developers SET salary = 6500 WHERE id = 4;
-UPDATE developers SET salary = 9800 WHERE id = 5;
-UPDATE developers SET salary = 3100 WHERE id = 6;
-UPDATE developers SET salary = 4600 WHERE id = 7;
-UPDATE developers SET salary = 6300 WHERE id = 8;
-UPDATE developers SET salary = 2900 WHERE id = 9;
-UPDATE developers SET salary = 900 WHERE id = 10;
+UPDATE `goit_hw_db`.`developers` SET `salary` = '1000' WHERE (`id_developer` = '1');
+UPDATE `goit_hw_db`.`developers` SET `salary` = '2000' WHERE (`id_developer` = '2');
+UPDATE `goit_hw_db`.`developers` SET `salary` = '3000' WHERE (`id_developer` = '3');
+UPDATE `goit_hw_db`.`developers` SET `salary` = '2000' WHERE (`id_developer` = '4');
+UPDATE `goit_hw_db`.`developers` SET `salary` = '4000' WHERE (`id_developer` = '5');
